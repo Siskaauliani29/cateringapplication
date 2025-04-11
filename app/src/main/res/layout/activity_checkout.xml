@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top|center_horizontal">
+
+    <!-- Total Belanjaan -->
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Belanjaan: Rp 0"
+        android:textSize="18sp"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="32dp" /> <!-- Added margin top for better positioning -->
+
+    <!-- Payment Method -->
+    <TextView
+        android:id="@+id/paymentMethodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metode Pembayaran: Cash"
+        android:textSize="16sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp"
+        android:layout_marginTop="16dp"/> <!-- Added margin for better spacing -->
+
+    <!-- Selesai Button -->
+    <Button
+        android:id="@+id/btnSelesai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selesai"
+        android:textSize="18sp" />
+
+</LinearLayout>

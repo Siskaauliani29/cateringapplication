@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Catering Application</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="view_menu">View Menu</string>
+    <string name="your_orders">Your Orders</string>
+    <string name="bayar">payment</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">cancel</string>
+        <!-- Total Order Text -->
+        <string name="total_order">Total Belanjaan: Rp %1$s</string>
+
+        <!-- Address Hint -->
+        <string name="address_hint">Masukkan alamat pengiriman</string>
+
+        <!-- Payment Method Text -->
+        <string name="payment_method">Metode Pembayaran: Cash</string>
+
+        <!-- Button Text -->
+        <string name="btn_selesai">Selesai</string>
+
+        <!-- Toast Messages -->
+        <string name="address_empty">Alamat pengiriman tidak boleh kosong!</string>
+        <string name="order_completed">Pesanan selesai! Dikirim ke: %1$s</string>
+
+</resources>

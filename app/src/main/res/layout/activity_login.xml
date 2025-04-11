@@ -1,0 +1,205 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Hero Image -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_catering" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Logo Chef -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_catering_logo"
+            android:background="@drawable/logo_background"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:scaleType="centerInside" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_bolditalic"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/edittext_background"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:elevation="3dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Separator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#CCCCCC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or, login with"
+                android:textColor="#888888"
+                android:fontFamily="@font/poppins"
+
+                android:paddingHorizontal="12dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#CCCCCC" />
+        </LinearLayout>
+
+        <!-- Social Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:weightSum="3">
+
+            <!-- Google -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_google"
+                    android:padding="12dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Google login" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Facebook -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_facebook"
+                    android:padding="12dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Facebook login" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Apple -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_apple"
+                    android:padding="12dp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Apple login" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Register Link -->
+        <TextView
+            android:id="@+id/registerLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Haven’t account? Register now"
+            android:textColor="#4CAF50"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:paddingBottom="32dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- First Row: Mie Goreng and Nasi Goreng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="24dp">
+
+            <!-- Mie Goreng -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="#EEEEEE">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/mie_goreng"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mie Goreng - Rp20.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnPesanMieGoreng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PESAN"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Nasi Goreng -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="#EEEEEE">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/nasi_goreng"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Goreng - Rp20.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnPesanNasiGoreng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PESAN"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Second Row: Nasi Kebuli and Nasi Kuning -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="24dp">
+
+            <!-- Nasi Kebuli -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="#EEEEEE">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/nasi_kebuli"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Kebuli - Rp20.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnPesanNasiKebuli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PESAN"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Nasi Kuning -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="#EEEEEE">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/nasi_kuning"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Kuning - Rp20.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnPesanNasiKuning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PESAN"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Third Row: Nasi Sambal Matah and Nasi Uduk -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="24dp">
+
+            <!-- Nasi Sambal Matah -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="#EEEEEE">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/nasi_sambal_matah"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Sambal Matah - Rp20.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnPesanNasiSambalMatah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PESAN"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <!-- Nasi Uduk -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:background="#EEEEEE">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/nasi_uduk"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Uduk - Rp20.000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/btnPesanNasiUduk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PESAN"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Tombol Checkout -->
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
